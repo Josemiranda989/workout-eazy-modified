@@ -6,6 +6,7 @@ const cookies = require("cookie-parser");
 // PRUEBAS
 const db = require("./database/models/");
 const { sequelize } = require("./database/models");
+require("dotenv").config();
 
 const mainRoutes = require("./routes/mainRoutes");
 const productsRoutes = require("./routes/productsRoutes");
@@ -91,13 +92,14 @@ app.use((req, res, next) => {
   res.status(404).render("404-error");
 });
 
-app.listen(3000, () => {
-  console.log("Servidor escuchando en el puerto http://localhost:3000/");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Servidor escuchando en el puerto http://localhost:${port}` );
 
   sequelize
     .sync({ force: false })
     .then(() => {
-      console.log("DB conectada");
+      console.log("DB conectada exitosamente");
     })
     .catch((e) => console.log(e));
 });
