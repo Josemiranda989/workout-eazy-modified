@@ -1,0 +1,74 @@
+<header>
+    <section class="mainheader-topbar">
+        <a href="#" class="burger-menu">
+            <i class="fa-solid fa-bars-staggered fa-xl" style="color: #000000;"></i>
+        </a>
+        <a href="/" ><img src="/images/logo-sinfondo.png" class="logo"></a>
+        <div class="persona"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></div>
+        <div class="buscador">
+            <select>
+                <option>Buenos Aires</option>
+                <option>Caracas</option>
+                <option>Bahía Blanca</option>
+                <option>Santa Fe</option>
+            </select>
+            <form action="/productSearch" method="GET">
+            <div class="searchDiv">
+            <input type="text" name="search"></input>
+            <button type="submit" class="lupita"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            </form>
+        </div>
+
+        <%if (locals.isLogged) { %>
+            <section class="login">
+                <img src="/images/avatars/<%= locals.userLogged.avatar %>" width="60px" style="border-radius: 100%">
+                <p class="bienvenida">¡ Hola <%= locals.userLogged.first_name %> <%= locals.userLogged.last_name %> ! </p>
+                <% if (locals.userLogged.rol == 'admin') { %>
+                    <a href="/perfilAliado"><button class="registro">
+                        <p>Perfil</p>
+                    </button></a>
+                    <% } else { %>
+
+                    <a href="/perfilCliente"><button class="registro">
+                        <p>Perfil</p>
+                    </button></a>
+
+                    <% } %>
+    
+                <a href="/logout"><button class="ingreso">
+                        <p>Log out</p>
+                    </button></a>
+            </section>
+            <% } else { %>
+    
+            <section class="login">
+                <a href="/register"><button class="registro">
+                        <p>Registro</p>
+                    </button></a>
+                <a href="/login"><button class="ingreso">
+                        <p>Ingresar</p>
+                    </button></a>
+            </section>
+            
+            <% } %>
+
+        <!---<section class="login">
+            <a href="/register"><button class="registro">
+                    <p>Registro</p>
+                </button></a>
+            <a href="/login"><button class="ingreso">
+                    <p>Ingresar</p>
+                </button></a>
+        </section>-->
+    </section>
+    <nav class="main-navbar">
+        <ul>
+            <li><a id="actividades">Actividades</a></li>
+            <li><a href="/product" id="productos">Productos</a></li>
+            <li><a id="promociones">Promociones</a></li>
+            <li><a href="/blog" id="blog">Blog</a></li>
+            <li><a href="/product/productCart" id="compras">Compras</a></li>
+        </ul>
+    </nav>
+</header>

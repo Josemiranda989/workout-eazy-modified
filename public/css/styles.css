@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,300&family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Body */
+
+body {
+    background-color: white;
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Font sizes */
+
+.titulares {
+    font-size: 24px;
+}
+
+.cuerpos-texto {
+    font-size: 14px;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mainheader-topbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.ingreso {
+    display: none;
+}
+
+.registro {
+    display: none;
+}
+
+.login p {
+    margin: auto;
+}
+
+.bienvenida {
+    font-weight:600;
+}
+
+/* Buscador */
+
+header .buscador {
+    width: 270px;
+    border-radius: 16px;
+    border: 1px solid #e8e8e8;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    margin: auto;
+
+}
+
+.buscador input {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #e8e8e8;
+    border-radius: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+.searchDiv {
+    display: flex;
+    align-items: center; 
+}
+
+
+header input:focus {
+    border: 1px #006e7f solid;
+}
+
+.buscador i {
+    width: 12%;
+}
+
+.lupita {
+    background-color: #00a170;
+    border: 1px solid #00a170;
+    border-radius: 45px;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.buscador select {
+    border: 1px solid #e8e8e8;
+    background-color: white;
+    border-radius: 14px;
+    padding: 1%;
+}
+
+.persona {
+    display: inline-block;
+}
+
+.persona:hover {
+    color: #5c5d5b;
+}
+
+.burger-menu i:hover {
+    color: #5c5d5b;
+}
+
+/* Navegador */
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-navbar ul li {
+    margin: 15px;
+}
+
+.main-navbar ul li:hover {
+    font-weight: 550;
+}
+
+/* Perfil usuario/cliente */
+
+.plantilla {
+    border: 3px red solid;
+    border-radius: 100%;
+}
+
+/* Main */
+
+/* Slider */
+
+.carousel {
+    background-color: rgba(0, 161, 112, 30%);
+    height: 700px;
+    border: rgba(0, 161, 112, 30%) 2px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen2 {
+    display:none;
+}
+
+.carousel-item img {
+    max-width: 350px;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.carousel-item.active {
+    margin-right: -14%;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.texto-slider h5 p {
+    color: black;
+}
+
+.textoSlider {
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.tarjeta {
+    text-decoration: underline;
+}
+
+.rutina {
+    background-color: whitesmoke;
+    border: whitesmoke solid 1px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+}
+
+.rutina p {
+    font-size: 20px;
+}
+
+.rutina p:hover {
+    color: #006e7f;
+}
+
+
+/* Banner 1 */
+
+.aliados {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.aliados div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+/* Actividades */
+
+.actividades h2 {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+.actividades img {
+    width: 332px;
+    border-top-right-radius: 40px;
+}
+
+.actividades {
+    background-color: rgba(92, 93, 91, 30%);
+    min-height: 600px;
+    border: rgba(92, 93, 91, 30%) 2px;
+    border-top-right-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ejemplos-actividades article {
+    margin-bottom: 30px;
+}
+
+.titulo-actividad {
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+}
+
+.ejemplos-actividades a {
+    text-decoration: none;
+}
+
+.nuevas-actividades {
+    text-decoration: underline;
+}
+
+.descripcion-actividad {
+    align-self: flex-start;
+    max-width: 300px;
+    text-align: left;
+}
+
+.titulo-actividad h4, p, i, a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Banner promocional */
+
+.banner-promocional {
+    background-color: black;
+    min-height: 200px;
+    color: whitesmoke;
+    border: 10px #006e7f solid;
+}
+
+.texto-banner p {
+    color: whitesmoke;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.animacion-regalo {
+    padding: 20px;
+    width: 32px;
+}
+
+.animacion-regalo, .descuento {
+    animation: aumentar 2s infinite alternate;
+}
+
+.texto-banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner-promocional img {
+    display: none;
+}
+
+
+/* Instructores */
+
+.instructores {
+    background-color: rgba(0, 161, 112, 30%);
+    min-height: 600px;
+    border: rgba(0, 161, 112, 30%) 2px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.instructores h2 {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+
+.instructores p {
+    max-width: 350px;
+    text-align: center;
+}
+
+.instructores img {
+    width: 250px;
+    border-top-right-radius: 40px;
+    align-self: flex-start;
+}
+
+.instructores img:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.info-instructor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.masinfo {
+    background-color: rgba(245, 245, 245, 0%);
+    border: black solid 1px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 12px;
+}
+
+.masinfo p {
+    font-family: 'Bebas Neue';
+    font-size: 15px;
+}
+
+.texto-instructor {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.texto-instructor h4 h3 {
+    font-size: 18px;
+}
+
+.ejemplos-instructores article {
+    margin-bottom: 20px;
+}
+
+.masinfo:hover {
+    color: #0084bd;
+    border: #0084bd solid 1px;
+}
+
+/* Footer */
+
+.consultas {
+    font-family: 'Bebas Neue';
+    background-color: #006e52;
+    border: #006e52 solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.consultas:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+
+footer p {
+    width: 50%;
+}
+
+footer {
+    padding-left: 30px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer h2 {
+    color: #0084bd;
+    text-align: left;
+    font-family: "Bebas neue";
+}
+
+.lista-footer li {
+    padding-bottom: 8px;
+}
+
+.navbar-footer li {
+    padding-bottom: 8px;
+}
+
+.navbar-footer li:hover {
+    font-weight: 550;
+}
+
+.iconos-redes i {
+    margin-right: 10px;
+}
+
+.footer-columna2 {
+    margin-bottom: 50px;
+}
+
+.footer-columna3 {
+    margin-top: 50px;
+}
+
+.lista-footer li:hover {
+    font-weight: 550;
+}
+
+.iconos-redes i:hover {
+    font-size: 32px;
+}
+
+
+/* NOT FOUND */
+.imagenNotFound img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+@media (min-width: 669px) {
+
+    /* Header */
+
+    .mainheader-topbar {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .logo {
+        max-width: 128px;
+    }
+
+    .ingreso {
+        width: 80px;
+        height: 40px;
+        border-radius: 14px;
+        border: 1px solid #e8e8e8;
+        background-color: #e8e8e8;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+    }
+
+    .ingreso p {
+        font-style: 'Roboto';
+        font-size: 16px;
+    }
+
+    .ingreso:hover {
+        background-color: #c1c1c1;
+        border: 1px solid #c1c1c1;
+        font-weight: 550;
+    }
+
+    .registro {
+        width: 80px;
+        height: 40px;
+        border-radius: 14px;
+        border: 0px;
+        background-color: rgba(0,0,0,0%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+    }
+
+    .registro p {
+        font-style: 'Roboto';
+        font-size: 16px;
+    }
+
+    .login a {
+        text-decoration: none;
+    }
+
+    .registro:hover {
+        border: 1px solid rgba(0, 161, 112, 30%);
+        background-color: rgba(0, 161, 112, 30%);
+    }
+
+    .login {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .main-navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 4px;
+    }
+
+    .main-navbar li {
+        padding-right: 30px;
+    }
+
+    .persona {
+        display: none;
+    }
+
+    .buscador {
+        width: 400px;
+    }
+
+    .main-navbar ul li:hover {
+        font-weight: 550;
+    }
+
+    /* Main */
+
+    /* Slider Home */
+
+    /*.slider-fotos img {
+        width: 400px;
+    }
+
+    .imagen-slider2 {
+        display: inline-block;
+    }*/
+
+    .carousel {
+        background-color: rgba(0, 161, 112, 30%);
+        height: 700px;
+        border: rgba(0, 161, 112, 30%) 2px;
+        border-bottom-left-radius: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-item img {
+        max-width: 400px;
+    }
+    
+    .carousel-inner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .carousel-item.active {
+        margin-right: -47%;
+    }
+    
+    .carousel-item {
+        text-align: center;
+    }
+    
+    .texto-slider h5 p {
+        color: black;
+    }
+    
+    .textoSlider {
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    
+
+    .rutina {
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .rutina p {
+        font-size: 30px;
+    }
+
+    .tarjeta {
+        font-size: 20px;
+    }
+
+    /* Actividades */
+
+    .actividades h2 {
+        font-size: 30px;
+    }
+
+    .ejemplos-actividades {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .actividades {
+        min-height: 600px;
+    }
+
+    /* Banner promocional */
+
+    .texto-banner {
+        width: 70%;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .banner-promocional {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .banner-promocional img {
+        display: block;
+        height: 200px;
+
+    }
+
+    .descuento {
+        font-size: 40px;
+    }
+
+    .texto-banner h3 {
+        font-size: 30px;
+    }
+
+    .texto-banner p {
+        font-size: 20px;
+    }
+
+    /* Instructores */
+
+    .instructores h2 {
+        font-size: 30px;
+    }
+
+    .masinfo p {
+        font-size: 20px;
+    }
+
+    .ejemplos-instructores {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .texto-instructor h4 h3 {
+        font-size: 18px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 10px;
+        padding-left: 50px;
+        margin-top: 20px;
+    }
+
+    .footer-columna1 {
+        width: 200px;
+    }
+
+    .footer-columna2 {
+        width: 200px;
+    }
+
+    .footer-columna4 {
+        width: 200px;
+    }
+
+    .footer-columna3 {
+        align-self: left;
+        width: 100%;
+    }
+}
+
+@media (min-width: 763px) {
+    .slider-fotos img {
+        width: 300px;
+    }
+
+/* Slider */
+
+.carousel {
+    background-color: rgba(0, 161, 112, 30%);
+    height: 700px;
+    border: rgba(0, 161, 112, 30%) 2px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-width: 400px;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.carousel-item.active {
+    margin-right: -47%;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.texto-slider h5 p {
+    color: black;
+}
+
+.textoSlider {
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+.rutina {
+    width: 250px;
+    font-size: 20px;
+}
+
+.rutina p {
+    font-size: 30px;
+}
+
+.tarjeta {
+    font-size: 20px;
+}
+
+}
+
+@media (min-width: 1200px) {
+    /*.slider-fotos img {
+        width: 400px;
+    }*/
+
+    header .buscador {
+        width: 400px;
+    }
+
+    .carousel-item img {
+        max-width: 750px;
+    }
+
+    .imagen1 {
+        display: none;
+    }
+
+    .imagen2 {
+        display: block;
+    }
+
+    .carousel-item.active {
+        margin-right: -57%;
+    }
+}
